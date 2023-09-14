@@ -34,6 +34,7 @@ export default {
       },
       screens: {
         wide: "1440px",
+        xl: "1280px",
       },
     },
   },

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constants";
@@ -6,12 +6,13 @@ import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
-    <section className="w-full flex xl:flex-row flex-col  justify-center min-h-screen gap-10 max-container">
+    <section className="w-full flex xl:flex-row flex-col  justify-center min-h-screen  max-container">
       <div
-        className="relative xl-w-2/5 flex
-       flex-col justify-center items-start
-        w-full max-xl:padding-x pt-28 pl-1"
+        className="relative flex
+       flex-col justify-start items-start
+         pt-28 pl-3"
       >
         <p
           className="text-xl font-montserrat
@@ -25,7 +26,7 @@ const Hero = () => {
         >
           <span
             className="xl:bg-white xl:whitespace-nowrap
-            relative z-10 pr-10"
+            relative z-10 "
           >
             The New Arrival
           </span>
@@ -42,7 +43,7 @@ const Hero = () => {
         <Button label="Shop now" iconURL={arrowRight} />
         <div
           className="flex justify-start
-         items-start flex-wrap w-full mt-20 gap-16"
+         items-start flex-wrap w-full mt-20 gap-12"
         >
           {statistics.map((stat) => (
             <div key={stat.label}>
@@ -54,22 +55,22 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div
-        className="relative  flex justify-center items-center xl:min-h-screen
-      max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
-      >
+      <div className="relative min-h-screen flex flex-col justify-center items-center bg-primary bg-hero bg-cover bg-center">
         <img
-          src={bigShoe1}
+          src={bigShoeImg}
           alt="shoe collection"
-          width={1210}
+          width={620}
           height={500}
-          className="object-contain
-          relative z-10"
+          className="object-contain z-10"
         />
-        <div>
+        <div className="flex absolute sm:gap-6 gap-4 -bottom-[4%] sm:left-[10%] max-sm:px-6">
           {shoes.map((shoe) => (
             <div key={shoe}>
-              <ShoeCard />
+              <ShoeCard
+                imgURL={shoe}
+                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                bigShoeImg=""
+              />
             </div>
           ))}
         </div>
