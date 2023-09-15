@@ -15,7 +15,7 @@ const Hero = () => {
       <div
         className="relative xl:w-2/5 flex 
        flex-col justify-start items-start w-full
-         max-xl:padding-x pt-28 pl-2"
+         max-xl:padding-x pt-28"
       >
         <p
           className="text-xl font-montserrat
