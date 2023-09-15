@@ -1,7 +1,7 @@
 import React from "react";
 import { star } from "../assets/icons";
 
-const PapularProductCard = ({ imgURL, name, price }) => {
+const PopularProductCard = ({ imgURL, name, price }) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
       <img src={imgURL} alt={name} className="w-[128px} h-[280px]" />
@@ -33,4 +33,4 @@ const PapularProductCard = ({ imgURL, name, price }) => {
   );
 };
 
-export default PapularProductCard;
+export default PopularProductCard;
