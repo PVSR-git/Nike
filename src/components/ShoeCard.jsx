@@ -16,8 +16,8 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
       onClick={handleClick}
     >
       <div
-        className="flex justify-center items-center
-       bg-card bg-center bi-covern sm:w-20 sm:h-30 rounded-xl max-sm:p-4"
+        className="flex justify-center items-center 
+       bg-card bg-center bi-covern sm:w-xl sm:h-30 rounded-xl max-sm:p-4"
       >
         <img
           className="object-contain"

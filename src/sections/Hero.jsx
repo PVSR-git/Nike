@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="w-full flex xl:flex-row flex-col  justify-center min-h-screen  max-container">
       <div
-        className="relative flex
+        className="relative flex flex-1
        flex-col justify-start items-start
          pt-28 pl-3"
       >
