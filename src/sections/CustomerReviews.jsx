@@ -27,7 +27,13 @@ const CustomerReviews = () => {
       items-center max-lg:flex-col gap-14"
       >
         {reviews.map((review) => (
-          <ReviewCard />
+          <ReviewCard
+            key={review.customerName}
+            imgURL={review.imgURL}
+            customerName={review.customerName}
+            rating={review.rating}
+            feedback={review.feedback}
+          />
         ))}
       </div>
     </section>
