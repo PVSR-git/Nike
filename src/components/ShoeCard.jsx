@@ -20,7 +20,7 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
       <div
         className="flex justify-center items-center 
        bg-card bg-center bi-cover sm:w-40
-        sm:h-30 rounded-xl max-sm:p-4"
+        sm:h-40 rounded-xl max-sm:p-4"
       >
         <img
           className="object-contain"
