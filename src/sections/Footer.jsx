@@ -39,10 +39,22 @@ const Footer = () => {
         >
           {footerLinks.map((section) => (
             <div key={section}>
-              <h4 className="text-white">{section.title}</h4>
+              <h4
+                className="text-white
+              font-montserrat text-2xl
+              leading-normal font-medium mb-6"
+              >
+                {section.title}
+              </h4>
               <ul>
                 {section.links.map((link) => (
-                  <li>
+                  <li
+                    key={link.name}
+                    className="mt-3 text-white-400
+                  font-montserrat text-base
+                  leading-normal hover:text-slate-gray
+                  cursor-pointer"
+                  >
                     <a>{link.name}</a>
                   </li>
                 ))}
