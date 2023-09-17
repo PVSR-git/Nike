@@ -1,6 +1,7 @@
 import React from "react";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
+import { copyrightSign } from "../assets/icons";
 
 const Footer = () => {
   return (
@@ -62,6 +63,18 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src={copyrightSign}
+            alt="copy right sign"
+            width={20}
+            height={20}
+          />
+          <p>Copyright. All rights reserved.</p>
+        </div>
+        <p>Terms & Conditions</p>
       </div>
     </footer>
   );
