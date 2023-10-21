@@ -69,8 +69,9 @@ const Hero = () => {
           alt="shoe collection"
           width={610}
           height={500}
-          className="object-contain relative z-10"
+          className="object-contain relative z-10 "
         />
+
         <div
           className="flex absolute
          sm:gap-6 gap-4 -bottom-[5%]
