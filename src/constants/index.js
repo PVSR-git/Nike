@@ -24,6 +24,7 @@ import {
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about-us", label: "About Us" },
+  { href: "#offers", label: "Offers" },
   { href: "#products", label: "Products" },
   { href: "#contact-us", label: "Contact Us" },
 ];
